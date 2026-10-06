@@ -1,0 +1,40 @@
+* { box-sizing: border-box; }
+body { font-family: Arial, sans-serif; margin: 20px; background: #f4f6f9; color: #222; }
+h1 { text-align: center; }
+section { background: #fff; padding: 16px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,.15); }
+button { padding: 8px 14px; margin: 4px 4px 10px 0; cursor: pointer; border: 0; border-radius: 4px; background: #2563eb; color: #fff; }
+button:hover { background: #1d4ed8; }
+.log { background: #111; color: #0f0; padding: 10px; min-height: 40px; max-height: 220px; overflow: auto; font-size: 12px; }
+
+/* Q1 */
+table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+th, td { border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+th { background: #1e293b; color: #fff; }
+tr.critical td { background: #fecaca; }
+tr.warning td { background: #fef08a; }
+
+/* Q2 */
+.panel { border: 2px dashed #94a3b8; padding: 10px; margin: 8px 0; }
+.group { margin-left: 20px; padding: 6px; border-left: 3px solid #cbd5e1; }
+.ai-node { padding: 8px; margin: 4px 0; background: #bbf7d0; border-radius: 4px; }
+.ai-node.node-warning { font-weight: bold; }
+
+/* Q3 */
+#chart { border: 3px solid #2563eb; padding: 12px; background: #eff6ff; }
+.bar { display: block; border: 2px solid #f59e0b; padding: 12px; margin: 8px 0; background: #fef3c7; cursor: pointer; text-decoration: none; color: inherit; }
+.bar-label { display: inline-block; padding: 6px; border: 2px solid #10b981; background: #d1fae5; }
+
+/* Q4 */
+.collapsible { border: 1px solid #94a3b8; margin-bottom: 10px; border-radius: 4px; overflow: hidden; }
+.collapsible-header { width: 100%; text-align: left; background: #334155; margin: 0; border-radius: 0; }
+.collapsible-body { padding: 10px; display: none; }
+.collapsible.open .collapsible-body { display: block; }
+.tip-target { display: inline-block; margin: 6px; padding: 6px 10px; background: #e0e7ff; border-radius: 4px; cursor: help; }
+.tooltip { position: fixed; z-index: 9999; background: #111827; color: #fff; padding: 6px 10px; border-radius: 4px; font-size: 12px; pointer-events: none; max-width: 220px; }
+
+/* Q5 */
+#fetchStatus { margin: 8px 0; font-weight: bold; }
+.status-loading { color: #b45309; }
+.status-ok { color: #15803d; }
+.status-error { color: #b91c1c; }
+.card { display: inline-block; border: 1px solid #94a3b8; border-radius: 6px; padding: 8px 12px; margin: 4px; background: #f8fafc; }

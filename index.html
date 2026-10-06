@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OOP for Intelligent Data Systems - DOM Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Intelligent Data Systems Dashboard</h1>
+
+  <!-- Q1 -->
+  <section>
+    <h2>Q1. Sensor Threshold Alerts (map / filter / reduce)</h2>
+    <button id="btnProcess">Process Sensor Data</button>
+    <div id="alertsContainer"></div>
+    <p id="alertSummary"></p>
+  </section>
+
+  <!-- Q2 -->
+  <section>
+    <h2>Q2. NodeIterator and TreeWalker Scan</h2>
+    <button id="btnScan">Scan for Offline Nodes</button>
+    <div id="dashboard">
+      <div class="panel">
+        <div class="ai-node" data-node="N1" data-status="online">Node N1</div>
+        <div class="ai-node" data-node="N2" data-status="offline">Node N2</div>
+        <div class="group">
+          <div class="ai-node" data-node="N3" data-status="offline">Node N3</div>
+          <div class="ai-node" data-node="N4" data-status="online">Node N4</div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="group">
+          <div class="group">
+            <div class="ai-node" data-node="N5" data-status="offline">Node N5</div>
+          </div>
+        </div>
+        <div class="ai-node" data-node="N6" data-status="online">Node N6</div>
+      </div>
+    </div>
+    <pre id="scanLog" class="log"></pre>
+  </section>
+
+  <!-- Q3 -->
+  <section>
+    <h2>Q3. Event Flow (Capturing and Bubbling)</h2>
+    <label><input type="checkbox" id="chkStop"> Stop propagation at bar</label>
+    <div id="chart">
+      <div class="bar" data-series="CPU" data-value="70">
+        <span class="bar-label">CPU 70%</span>
+      </div>
+      <div class="bar" data-series="RAM" data-value="45">
+        <span class="bar-label">RAM 45%</span>
+      </div>
+      <a href="https://example.com" class="bar link" data-series="Docs" data-value="10">
+        <span class="bar-label">Docs link (default blocked)</span>
+      </a>
+    </div>
+    <pre id="eventLog" class="log"></pre>
+  </section>
+
+  <!-- Q4 -->
+  <section>
+    <h2>Q4. Collapsible and Tooltip Plugin</h2>
+    <div id="pluginArea"></div>
+  </section>
+
+  <!-- Q5 -->
+  <section>
+    <h2>Q5. Async JSON Fetch Simulation</h2>
+    <button data-endpoint="/api/ok">Fetch OK</button>
+    <button data-endpoint="/api/server-error">Server Error (500)</button>
+    <button data-endpoint="/api/bad-json">Malformed JSON</button>
+    <div id="fetchStatus"></div>
+    <div id="fetchResult"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
